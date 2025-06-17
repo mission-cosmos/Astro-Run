@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astro Run</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  Hello world
+  <h1>Astro Run 🌠</h1>
+  <canvas id="gameCanvas" width="640" height="360"></canvas>
+  <p id="score">Score: 0</p>
+  <p id="status"></p>
+  <script>
+    window.assets = {};
+    ["probe.png", "asteroid.png"].forEach(src => {
+      const img = new Image();
+      img.src = src;
+      window.assets[src] = img;
+    });
+  </script>
   <script src="script.js"></script>
-</body>
-
-</html>
+  </body>
+  </html>
