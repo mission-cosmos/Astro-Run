@@ -1,4 +1,23 @@
-html {
-  height: 100%;
-  width: 100%;
+:root {
+  --space-bg: #1a0226;
+  --ground:   #310f4d;
+  --star:     #ffffff;
+  --player:   #e8e8e8;
+  --obstacle: #888888;
 }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--space-bg);
+  color: var(--star);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+h1 { margin: 12px 0; }
+canvas {
+  background: var(--space-bg);
+  border: 2px solid var(--star);
+  display: block;
+  margin: 0 auto;
+}
+#score, #status { margin: 6px 0; }
