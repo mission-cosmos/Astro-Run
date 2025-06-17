@@ -22,7 +22,7 @@ const player = {
   y: H/2 - 20,   // start mid-screen
   w: 40,
   h: 40,
-  speed: 10
+  speed: 8
 };
 
 // Input listeners
