@@ -12,7 +12,7 @@ const stars = Array.from({ length: 150 }, () => ({
   r: Math.random() * 1.5 + 0.5
 }))
 
-// Game state
+
 let obstacles = [], frame = 0, score = 0, gameOver = false;
 const keys = {};
 
